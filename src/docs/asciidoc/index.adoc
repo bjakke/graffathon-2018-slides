@@ -1,0 +1,38 @@
+= Introduction to Processing
+Bjakke
+2018-05-10
+:revnumber: {project-version}
+:example-caption!:
+ifndef::imagesdir[:imagesdir: images]
+ifndef::sourcedir[:sourcedir: ../../main/java]
+
+== Slide1
+
+[%step]
+* Point1
+* Point2
+* Point3
+
+== Slide2
+
+Press the `*s*` key to access speaker notes.
+
+[NOTE.speaker]
+--
+Testing speaker notes here..
+--
+
+== Blank screen
+
+You can press `*b*` or `*.*` to blank your current screen.
+
+Hit it again to bring it back.
+
+== Overview
+
+Press the `*esc*` key to get an overview of your slides.
+
+== TODO more slides
+
+...
+
