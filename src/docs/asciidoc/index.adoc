@@ -1,36 +1,85 @@
 = Introduction to Processing
 Bjakke
-2018-05-10
+2018-05-14
 :revnumber: {project-version}
 :example-caption!:
 ifndef::imagesdir[:imagesdir: images]
 ifndef::sourcedir[:sourcedir: ../../main/java]
+:icons: font
 
-== Slide1
+== Presentation Navigation
 
-[%step]
-* Point1
-* Point2
-* Point3
-
-== Slide2
-
-Press the `*s*` key to access speaker notes.
+* Navigate with arrows
+* `*s*` open speaker notes
+* `*b*` or `*.*` to blank screen
+* `*esc*` to get slide overview
 
 [NOTE.speaker]
 --
-Testing speaker notes here..
+Some test notes
 --
 
-== Blank screen
+== Agenda
 
-You can press `*b*` or `*.*` to blank your current screen.
+* Basics needed for a demo
+* Processing
+* Rocket
+* Moonlander
+* General tips
 
-Hit it again to bring it back.
+== Demo basics
 
-== Overview
+[%step]
+* Graphics
+* Music
+* Music usually in sync with image
+* Last few minutes
+* (These vary depending competition rules and categories)
 
-Press the `*esc*` key to get an overview of your slides.
+[NOTE.speaker]
+--
+Intro vs. Demo
+--
+
+== Processing
+* https://processing.org/ "Processing is a flexible software sketchbook and a language for learning how to code within the context of the visual arts."
+* Free & Open source
+* Works on major PC platforms
+
+
+=== Processing Basics
+//TODO maybe a picture of the UI here?
+
+* IDE-like environment for writing/compiling/running sketches
+* Has own simple programming language
+** Processing internally transforms and compile it as Java code
+* Has also a Python mode
+
+=== Sketch structure
+
+[source, java]
+----
+void settings() {
+
+}
+
+void setup() {
+
+}
+
+void draw() {
+
+}
+----
+
+=== TODO more
+Individual slides for each of the functions
+
+== Testing..
+
+WARNING: Important text
+
+NOTE: a note
 
 == TODO more slides
 
