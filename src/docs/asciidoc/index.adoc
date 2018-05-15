@@ -59,6 +59,9 @@ Intro vs. Demo
 
 [source, java]
 ----
+
+//Global variables here
+
 void settings() {
 	//used if parameters used for size function
 	size(CANVAS_WIDTH, CANVAS_HEIGHT, P2D );
@@ -73,10 +76,48 @@ void draw() {
 }
 ----
 
-=== TODO more
-Individual slides for each of the functions
+=== settings function
+* New in Processing 3.x
+* Used if using variables for the size() function parameters
 
-== Testing..
+=== setup function
+* Called once per sketch before draw
+* Used to initialize systems
+** Setup fps, Moonlander etc. (explained later)
+
+e.g.
+
+[source, java]
+----
+void setup(){
+	frameRate(60);
+	
+	...
+}
+----
+
+=== draw function
+* Called once per frame
+** (if computer can handle)
+
+e.g.
+
+[source, java]
+----
+void draw(){
+	... TODO
+}
+----
+
+
+== Rocket
+
+[%step]
+* General problem: How to sync music into graphics?
+** Solution: Make demo as a function of time and use a tracker
+
+
+
 
 WARNING: Important text
 
