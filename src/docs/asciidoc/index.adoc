@@ -60,15 +60,16 @@ Intro vs. Demo
 [source, java]
 ----
 void settings() {
-
+	//used if parameters used for size function
+	size(CANVAS_WIDTH, CANVAS_HEIGHT, P2D );
 }
 
 void setup() {
-
+	//one-time setup call at the start
 }
 
 void draw() {
-
+	// loop, draw one frame
 }
 ----
 
