@@ -25,6 +25,7 @@ ifndef::sourcedir[:sourcedir: ../../main/java]
 Some test notes
 --
 
+[background-image=background.png, background-size=contain]
 == Agenda
 
 * Basics needed for a demo
@@ -33,6 +34,7 @@ Some test notes
 * Moonlander
 * General tips
 
+[background-image=background.png, background-size=contain]
 == Demo basics
 
 [%step]
@@ -47,12 +49,13 @@ Some test notes
 Intro vs. Demo
 --
 
+[background-image=background.png, background-size=contain]
 == Processing
 * https://processing.org/ "Processing is a flexible software sketchbook and a language for learning how to code within the context of the visual arts."
 * Free & Open source
 * Works on major PC platforms
 
-
+[background-image=background.png, background-size=contain]
 === Processing Basics
 //TODO maybe a picture of the UI here?
 
@@ -61,6 +64,7 @@ Intro vs. Demo
 ** Processing internally transforms and compile it as Java code
 * Has also a Python mode
 
+[background-image=background.png, background-size=contain]
 === Sketch structure
 
 [source, java]
@@ -82,10 +86,12 @@ void draw() {
 }
 ----
 
+[background-image=background.png, background-size=contain]
 === settings function
 * New in Processing 3.x
 * Used if using variables for the size() function parameters
 
+[background-image=background.png, background-size=contain]
 === setup function
 * Called once per sketch before draw
 * Used to initialize systems
@@ -102,6 +108,7 @@ void setup(){
 }
 ----
 
+[background-image=background.png, background-size=contain]
 === draw function
 * Called once per frame
 ** (if computer can handle)
@@ -115,14 +122,13 @@ void draw(){
 }
 ----
 
-
+[background-image=background.png, background-size=contain]
 == Rocket
 
 [%step]
 * General problem: How to sync music into graphics?
 ** Solution: Make demo as a function of time and use a tracker
 ** -> Rocket
-
 
 == Testing..
 
