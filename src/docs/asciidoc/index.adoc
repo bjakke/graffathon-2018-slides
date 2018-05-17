@@ -1,3 +1,4 @@
+[background-image=background.png]
 = Introduction to Processing
 Bjakke
 2018-05-14
@@ -7,7 +8,10 @@ ifndef::imagesdir[:imagesdir: images]
 ifndef::sourcedir[:sourcedir: ../../main/java]
 :icons: font
 
+[background-image=background.png, background-size=contain]
 == Presentation Navigation
+
+//image::background.png[background, size=contain]
 
 * Navigate with arrows
 * `*s*` open speaker notes
