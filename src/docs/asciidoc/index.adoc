@@ -2,16 +2,18 @@
 = Introduction to Processing
 Bjakke
 2018-05-14
+//:notitle:
 :revnumber: {project-version}
 :example-caption!:
 ifndef::imagesdir[:imagesdir: images]
 ifndef::sourcedir[:sourcedir: ../../main/java]
 :icons: font
+:title-slide-background-image: background.png
+:title-slide-background-size: contain
+
 
 [background-image=background.png, background-size=contain]
 == Presentation Navigation
-
-//image::background.png[background, size=contain]
 
 * Navigate with arrows
 * `*s*` open speaker notes
