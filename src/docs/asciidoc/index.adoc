@@ -130,6 +130,25 @@ void draw(){
 ** Solution: Make demo as a function of time and use a tracker
 ** -> Rocket
 
+[background-image=background.png, background-size=contain]
+== Tips - Music
+* Use music that you have created yourself or have a license/permission to use
+* Making it yourself will give you more control, but the learning workload might be outside the scope of the event
+* In both cases, you'll need the tempo bpm (Beats Per Minute) number for Moonlander
+
+[background-image=background.png, background-size=contain]
+== Tips - Music cont'd
+* For free music Google "Royalty free music" and/or "Creative Commons music"
+* Remember to check the license and make required attributions if needed
+** In practice choose something that is Creative Commons (CC) and mention in the credits
+
+WARNING: Do not use CC-ND ("no derivates", as sync to music is a derivate work in CC)
+
+[background-image=background.png, background-size=contain]
+== Tips - Music - List of sites
+* https://incompetech.com
+* http://freemusicarchive.org
+
 == Testing..
 
 WARNING: Important text
