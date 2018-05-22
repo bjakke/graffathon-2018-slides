@@ -56,7 +56,7 @@ Intro vs. Demo
 * Works on major PC platforms
 
 [background-image=background.png, background-size=contain]
-=== Processing Basics
+== Processing Basics
 //TODO maybe a picture of the UI here?
 
 * IDE-like environment for writing/compiling/running sketches
@@ -65,7 +65,7 @@ Intro vs. Demo
 * Has also a Python mode
 
 [background-image=background.png, background-size=contain]
-=== Sketch structure
+== Sketch structure
 
 [source, java]
 ----
@@ -87,12 +87,12 @@ void draw() {
 ----
 
 [background-image=background.png, background-size=contain]
-=== settings function
+== settings function
 * New in Processing 3.x
 * Used if using variables for the size() function parameters
 
 [background-image=background.png, background-size=contain]
-=== setup function
+== setup function
 * Called once per sketch before draw
 * Used to initialize systems
 ** Setup fps, Moonlander etc. (explained later)
@@ -109,7 +109,7 @@ void setup(){
 ----
 
 [background-image=background.png, background-size=contain]
-=== draw function
+== draw function
 * Called once per frame
 ** (if computer can handle)
 
