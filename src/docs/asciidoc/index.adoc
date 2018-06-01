@@ -1,10 +1,8 @@
 [background-image=background.png]
 = Introduction to Processing
-Bjakke
-2018-05-14
-//:notitle:
+(And few other things)
+2018-06-08
 :revnumber: {project-version}
-:example-caption!:
 ifndef::imagesdir[:imagesdir: images]
 ifndef::sourcedir[:sourcedir: ../../main/java]
 :icons: font
@@ -30,8 +28,7 @@ Some test notes
 
 * Basics needed for a demo
 * Processing
-* Rocket
-* Moonlander
+* Rocket & Moonlander
 * General tips
 
 [background-image=background.png, background-size=contain]
@@ -42,7 +39,8 @@ Some test notes
 * Music
 * Music usually in sync with image
 * Last few minutes
-* (These vary depending competition rules and categories)
++
+NOTE: These vary depending competition rules and categories
 
 [NOTE.speaker]
 --
@@ -60,9 +58,9 @@ Intro vs. Demo
 //TODO maybe a picture of the UI here?
 
 * IDE-like environment for writing/compiling/running sketches
-* Has own simple programming language
-** Processing internally transforms and compile it as Java code
-* Has also a Python mode
+* Has own simple Java-ish programming language
+** Processing internally transforms/compiles/runs it as Java code
+* Good references and examples https://processing.org/reference/
 
 [background-image=background.png, background-size=contain]
 == Sketch structure
@@ -73,16 +71,16 @@ Intro vs. Demo
 //Global variables here
 
 void settings() {
-	//used if parameters used for size function
+	// used if parameters used for size function
 	size(CANVAS_WIDTH, CANVAS_HEIGHT, P2D );
 }
 
 void setup() {
-	//one-time setup call at the start
+	// one-time setup called at the start
 }
 
 void draw() {
-	// loop, draw one frame
+	// called repeatedly, draw one frame
 }
 ----
 
@@ -97,8 +95,6 @@ void draw() {
 * Used to initialize systems
 ** Setup fps, Moonlander etc. (explained later)
 
-e.g.
-
 [source, java]
 ----
 void setup(){
@@ -112,8 +108,6 @@ void setup(){
 == draw function
 * Called once per frame
 ** (if computer can handle)
-
-e.g.
 
 [source, java]
 ----
@@ -134,7 +128,7 @@ void draw(){
 == Tips - Music
 * Use music that you have created yourself or have a license/permission to use
 * Making it yourself will give you more control, but the learning workload might be outside the scope of the event
-* In both cases, you'll need the tempo bpm (Beats Per Minute) number for Moonlander
+* In both cases, you'll need the tempo BPM number (Beats Per Minute) for Moonlander
 
 [background-image=background.png, background-size=contain]
 == Tips - Music cont'd
@@ -142,7 +136,7 @@ void draw(){
 * Remember to check the license and make required attributions if needed
 ** In practice choose something that is Creative Commons (CC) and mention in the credits
 
-WARNING: Do not use CC-ND ("no derivates", as sync to music is a derivate work in CC)
+WARNING: Do not use CC-ND (Creative Commons "No Derivates")
 
 [background-image=background.png, background-size=contain]
 == Tips - Music - List of sites
