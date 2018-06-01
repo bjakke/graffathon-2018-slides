@@ -87,7 +87,7 @@
                             <outputDirectory>${project.slides.directory}</outputDirectory>
                             <backend>revealjs</backend>
                             <templateDir>${project.build.directory}/asciidoctor-reveal.js-${asciidoctor-revealjs.version}/templates/slim</templateDir>
-                            <sourceHighlighter>coderay</sourceHighlighter>
+                            <sourceHighlighter>highlightjs</sourceHighlighter>
                             <attributes>
                                 <!-- 
                                     As we are downloading reveal.js in runtime, it sits in a nonstandard folder `reveal.js-${revealjs.version}`
