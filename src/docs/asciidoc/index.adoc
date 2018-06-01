@@ -121,25 +121,41 @@ void draw(){
 
 [%step]
 * General problem: How to sync music into graphics?
-** Solution: Make demo as a function of time and use a tracker
-** -> Rocket
+* Solution: Make demo as a function of time and use a tracker
+* -> Rocket https://github.com/rocket/rocket
+* Integration to Processing done via Moonlander library https://github.com/anttihirvonen/moonlander
+
 
 [background-image=background.png, background-size=contain]
-== Tips - Music
+== Rocket
+
+[%step]
+* Live editing numeric values for variables at time instants
+* Can move forward and backwards in time while running
+* Define interpolations between defined values
+* Read values to Processing via Moonlander
+* Configuration can be saved as a file to be run without Rocket
+
+
+
+
+[background-image=background.png, background-size=contain]
+== Music
 * Use music that you have created yourself or have a license/permission to use
 * Making it yourself will give you more control, but the learning workload might be outside the scope of the event
 * In both cases, you'll need the tempo BPM number (Beats Per Minute) for Moonlander
 
 [background-image=background.png, background-size=contain]
-== Tips - Music cont'd
+== Music cont'd
 * For free music Google "Royalty free music" and/or "Creative Commons music"
-* Remember to check the license and make required attributions if needed
-** In practice choose something that is Creative Commons (CC) and mention in the credits
+* Check the license and make required attributions
+
+NOTE: In practice choose something that is Creative Commons (CC) and mention in the credits
 
 WARNING: Do not use CC-ND (Creative Commons "No Derivates")
 
 [background-image=background.png, background-size=contain]
-== Tips - Music - List of sites
+== Music - List of sites
 * https://incompetech.com
 * http://freemusicarchive.org
 
