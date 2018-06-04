@@ -132,8 +132,13 @@ void draw(){
 * Read values to Processing via Moonlander
 * Configuration can be saved as a file to be run without Rocket
 
-
-
+[background-image=background.png, background-size=contain]
+== Installing moonlander
+** First install Minim dependency
+* Sketch -> Import Library -> Add Library
+* Download Moonlander and unzip to your Sketchbook location
+** File -> Preferences "Sketchbook location"
+** (libraries subfolder, next to minim folder)
 
 [background-image=background.png, background-size=contain]
 == Music
