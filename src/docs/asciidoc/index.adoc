@@ -1,6 +1,6 @@
 [background-image=background.png]
 = Introduction to Processing
-(And few other things)
+(And a few other things)
 2018-06-08
 :revnumber: {project-version}
 ifndef::imagesdir[:imagesdir: images]
@@ -10,18 +10,18 @@ ifndef::sourcedir[:sourcedir: ../../main/java]
 :title-slide-background-size: contain
 
 
-[background-image=background.png, background-size=contain]
-== Presentation Navigation
-
-* Navigate with arrows
-* `*s*` open speaker notes
-* `*b*` or `*.*` to blank screen
-* `*esc*` to get slide overview
-
-[NOTE.speaker]
---
-Some test notes
---
+//[background-image=background.png, background-size=contain]
+//== Presentation Navigation
+//
+//* Navigate with arrows
+//* `*s*` open speaker notes
+//* `*b*` or `*.*` to blank screen
+//* `*esc*` to get slide overview
+//
+//[NOTE.speaker]
+//--
+//Some test notes
+//--
 
 [background-image=background.png, background-size=contain]
 == Agenda
@@ -37,15 +37,11 @@ Some test notes
 [%step]
 * Graphics
 * Music
-* Music usually in sync with image
-* Last few minutes
+* Graphics usually in sync with music
+* Last few minutes (~ 1-4)
 +
 NOTE: These vary depending competition rules and categories
 
-[NOTE.speaker]
---
-Intro vs. Demo
---
 
 [background-image=background.png, background-size=contain]
 == Processing
@@ -159,13 +155,23 @@ WARNING: Do not use CC-ND (Creative Commons "No Derivates")
 * https://incompetech.com
 * http://freemusicarchive.org
 
-== Testing..
+[background-image=background.png, background-size=contain]
+== Tips
 
-WARNING: Important text
+[%step]
+* Start at https://github.com/anttihirvonen/demoscene-starter-kits
+* Use version control (e.g. Git), or at least backups
+* Make something you can submit first, improve later
+* Doublecheck the final version is correct one
+* Have fun :)
 
-NOTE: a note
+[background-image=background.png, background-size=contain]
+== Tips - extra
+* Code everything as function of time
+* Code everything resolution independent
+* Needs to look good only on compo machine
+* Effects can be short and can be repeated
 
-== TODO more slides
 
-...
+
 
