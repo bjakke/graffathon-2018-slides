@@ -15,23 +15,33 @@ void setup() {
 void draw() {
 	// called repeatedly, draw one frame
 }</code></pre></div></div></section>
+<section id="_global_variables" data-background-image="images/background.png" data-background-size="contain"><h2>global variables</h2><div class="ulist"><ul><li><p>Imports go before these (e.g. <code>import moonlander.library.*;</code>)</p></li><li><p>Useful for constants</p></li><li><p>Used when a variable needed in both setup and draw</p></li></ul></div></section>
 <section id="_settings_function" data-background-image="images/background.png" data-background-size="contain"><h2>settings function</h2><div class="ulist"><ul><li><p>New in Processing 3.x</p></li><li><p>Used if using variables for the size() function parameters</p></li></ul></div>
-<div class="listingblock"><div class="content"><pre class="highlight"><code class="java language-java">void settings(){
+<div class="listingblock"><div class="content"><pre class="highlight"><code class="java language-java">// These control how big the opened window is.
+// Before you release your demo, set these to
+// full HD resolution (1920x1080).
+int CANVAS_WIDTH = 480;
+int CANVAS_HEIGHT = 360;
+
+void settings(){
 	size(CANVAS_WIDTH, CANVAS_HEIGHT, P2D );
 }</code></pre></div></div></section>
 <section id="_setup_function" data-background-image="images/background.png" data-background-size="contain"><h2>setup function</h2><div class="ulist"><ul><li><p>Called once per sketch before draw</p></li><li><p>Used to initialize systems</p><div class="ulist"><ul><li><p>Setup fps, Moonlander etc. (explained later)</p></li></ul></div></li></ul></div>
 <div class="listingblock"><div class="content"><pre class="highlight"><code class="java language-java">void setup(){
 	frameRate(60);
-
 	...
+	moonlander = Moonlander.initWithSoundtrack(...);
+	moonlander.start();
 }</code></pre></div></div></section>
-<section id="_draw_function" data-background-image="images/background.png" data-background-size="contain"><h2>draw function</h2><div class="ulist"><ul><li><p>Called once per frame</p><div class="ulist"><ul><li><p>(if computer can handle)</p></li></ul></div></li></ul></div>
+<section id="_draw_function" data-background-image="images/background.png" data-background-size="contain"><h2>draw function</h2><div class="ulist"><ul><li><p>Draw one frame to the screen</p></li><li><p>Normally the first line clear the screen</p><div class="ulist"><ul><li><p>Can be left out for interesting effects</p></li></ul></div></li></ul></div>
 <div class="listingblock"><div class="content"><pre class="highlight"><code class="java language-java">void draw(){
-	... TODO
+	background(0);
+	moonlander.update(); //needs to be called every frame
+	...
 }</code></pre></div></div></section>
 <section id="_rocket" data-background-image="images/background.png" data-background-size="contain"><h2>Rocket</h2><div class="ulist"><ul><li class="fragment"><p>General problem: How to sync music into graphics?</p></li><li class="fragment"><p>Solution: Make demo as a function of time and use a tracker</p></li><li class="fragment"><p>&#8594; Rocket <a href="https://github.com/rocket/rocket" class="bare">https://github.com/rocket/rocket</a></p></li><li class="fragment"><p>Integration to Processing done via Moonlander library <a href="https://github.com/anttihirvonen/moonlander" class="bare">https://github.com/anttihirvonen/moonlander</a></p></li></ul></div></section>
 <section id="_rocket_2" data-background-image="images/background.png" data-background-size="contain"><h2>Rocket</h2><div class="ulist"><ul><li class="fragment"><p>Live editing numeric values for variables at time instants</p></li><li class="fragment"><p>Can move forward and backwards in time while running</p></li><li class="fragment"><p>Define interpolations between defined values</p></li><li class="fragment"><p>Read values to Processing via Moonlander</p></li><li class="fragment"><p>Configuration can be saved as a file to be run without Rocket</p></li></ul></div></section>
-<section id="_installing_moonlander" data-background-image="images/background.png" data-background-size="contain"><h2>Installing moonlander</h2><div class="ulist"><ul><li><p>First install Minim dependency</p><div class="ulist"><ul><li><p>Sketch &#8594; Import Library &#8594; Add Library</p></li><li><p>Download Moonlander and unzip to your Sketchbook location</p></li></ul></div></li><li><p>File &#8594; Preferences "Sketchbook location"</p></li><li><p>(libraries subfolder, next to minim folder)</p></li></ul></div></section>
+<section id="_installing_moonlander" data-background-image="images/background.png" data-background-size="contain"><h2>Installing moonlander</h2><div class="ulist"><ul><li><p>First install Minim dependency</p><div class="ulist"><ul><li><p>Sketch &#8594; Import Library &#8594; Add Library</p></li></ul></div></li><li><p>Download Moonlander and unzip to your Sketchbook location</p><div class="ulist"><ul><li><p>File &#8594; Preferences "Sketchbook location"</p></li><li><p>(libraries subfolder, next to minim folder)</p></li></ul></div></li></ul></div></section>
 <section id="_music" data-background-image="images/background.png" data-background-size="contain"><h2>Music</h2><div class="ulist"><ul><li><p>Use music that you have created yourself or have a license/permission to use</p></li><li><p>Making it yourself will give you more control, but the learning workload might be outside the scope of the event</p></li><li><p>In both cases, you&#8217;ll need the tempo BPM number (Beats Per Minute) for Moonlander</p></li></ul></div></section>
 <section id="_music_cont_d" data-background-image="images/background.png" data-background-size="contain"><h2>Music cont&#8217;d</h2><div class="ulist"><ul><li><p>For free music Google "Royalty free music" and/or "Creative Commons music"</p></li><li><p>Check the license and make required attributions</p></li></ul></div>
 <div class="admonitionblock note"><table><tr><td class="icon"><i class="fa fa-info-circle"></i></td><td class="content">In practice choose something that is Creative Commons (CC) and mention in the credits</td></tr></table></div>

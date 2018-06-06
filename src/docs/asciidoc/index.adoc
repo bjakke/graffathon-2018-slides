@@ -80,12 +80,25 @@ void draw() {
 ----
 
 [background-image=background.png, background-size=contain]
+== global variables
+* Imports go before these (e.g. `import moonlander.library.*;`)
+* Useful for constants
+* Used when a variable needed in both setup and draw
+
+
+[background-image=background.png, background-size=contain]
 == settings function
 * New in Processing 3.x
 * Used if using variables for the size() function parameters
 
 [source, java]
 ----
+// These control how big the opened window is.
+// Before you release your demo, set these to 
+// full HD resolution (1920x1080).
+int CANVAS_WIDTH = 480;
+int CANVAS_HEIGHT = 360;
+
 void settings(){
 	size(CANVAS_WIDTH, CANVAS_HEIGHT, P2D );
 }
@@ -101,20 +114,24 @@ void settings(){
 ----
 void setup(){
 	frameRate(60);
-	
 	...
+	moonlander = Moonlander.initWithSoundtrack(...);
+	moonlander.start();
 }
 ----
 
 [background-image=background.png, background-size=contain]
 == draw function
-* Called once per frame
-** (if computer can handle)
+* Draw one frame to the screen
+* Normally the first line clear the screen
+** Can be left out for interesting effects
 
 [source, java]
 ----
 void draw(){
-	... TODO
+	background(0);
+	moonlander.update(); //needs to be called every frame
+	...
 }
 ----
 
@@ -140,8 +157,8 @@ void draw(){
 
 [background-image=background.png, background-size=contain]
 == Installing moonlander
-** First install Minim dependency
-* Sketch -> Import Library -> Add Library
+* First install Minim dependency
+** Sketch -> Import Library -> Add Library
 * Download Moonlander and unzip to your Sketchbook location
 ** File -> Preferences "Sketchbook location"
 ** (libraries subfolder, next to minim folder)
