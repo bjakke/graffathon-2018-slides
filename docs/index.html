@@ -6,7 +6,6 @@
 
 void settings() {
 	// used if parameters used for size function
-	size(CANVAS_WIDTH, CANVAS_HEIGHT, P2D );
 }
 
 void setup() {
@@ -16,7 +15,10 @@ void setup() {
 void draw() {
 	// called repeatedly, draw one frame
 }</code></pre></div></div></section>
-<section id="_settings_function" data-background-image="images/background.png" data-background-size="contain"><h2>settings function</h2><div class="ulist"><ul><li><p>New in Processing 3.x</p></li><li><p>Used if using variables for the size() function parameters</p></li></ul></div></section>
+<section id="_settings_function" data-background-image="images/background.png" data-background-size="contain"><h2>settings function</h2><div class="ulist"><ul><li><p>New in Processing 3.x</p></li><li><p>Used if using variables for the size() function parameters</p></li></ul></div>
+<div class="listingblock"><div class="content"><pre class="highlight"><code class="java language-java">void settings(){
+	size(CANVAS_WIDTH, CANVAS_HEIGHT, P2D );
+}</code></pre></div></div></section>
 <section id="_setup_function" data-background-image="images/background.png" data-background-size="contain"><h2>setup function</h2><div class="ulist"><ul><li><p>Called once per sketch before draw</p></li><li><p>Used to initialize systems</p><div class="ulist"><ul><li><p>Setup fps, Moonlander etc. (explained later)</p></li></ul></div></li></ul></div>
 <div class="listingblock"><div class="content"><pre class="highlight"><code class="java language-java">void setup(){
 	frameRate(60);

@@ -68,7 +68,6 @@ NOTE: These vary depending competition rules and categories
 
 void settings() {
 	// used if parameters used for size function
-	size(CANVAS_WIDTH, CANVAS_HEIGHT, P2D );
 }
 
 void setup() {
@@ -84,6 +83,13 @@ void draw() {
 == settings function
 * New in Processing 3.x
 * Used if using variables for the size() function parameters
+
+[source, java]
+----
+void settings(){
+	size(CANVAS_WIDTH, CANVAS_HEIGHT, P2D );
+}
+----
 
 [background-image=background.png, background-size=contain]
 == setup function
