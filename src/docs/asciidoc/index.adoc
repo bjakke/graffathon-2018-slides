@@ -200,6 +200,10 @@ WARNING: Do not use CC-ND (Creative Commons "No Derivates")
 * Needs to look good only on compo machine
 * Effects can be short and can be repeated
 
-
+[background-image=background.png, background-size=contain]
+== Tips - extra2
+* Libraries 
+** PeasyCam
+** QueasyCam
 
 
