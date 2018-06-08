@@ -187,7 +187,7 @@ WARNING: Do not use CC-ND (Creative Commons "No Derivates")
 == Tips
 
 [%step]
-* Start at https://github.com/anttihirvonen/demoscene-starter-kits
+* Start at http://www.graffathon.fi/2018/getting-started/
 * Use version control (e.g. Git), or at least backups
 * Make something you can submit first, improve later
 * Doublecheck the final version is correct one
